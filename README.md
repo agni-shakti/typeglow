@@ -16,21 +16,21 @@ Reactive keyboard backlight daemon for Samsung Galaxy Book laptops on Linux.
 - root access
 
 ## Installation
-
+```bash
 sudo cp typeglow.sh /usr/local/bin/typeglow
 sudo chmod +x /usr/local/bin/typeglow
-
+```
 ## Install systemd service
-
+```bash
 sudo cp systemd/typeglow.service /etc/systemd/system/typeglow.service
 sudo systemctl daemon-reload
 sudo systemctl enable typeglow.service
 sudo systemctl start typeglow.service
-
+```
 ### Install dependencies
 ```bash
 sudo apt install evtest
-
+```
 ## Configuration
 
 Edit the variables at the top of typeglow.sh:
