@@ -1,7 +1,5 @@
 [Unit]
 Description=Typeglow - reactive keyboard backlight
-Requires=dev-input-event3.device
-After=dev-input-event3.device
 
 [Service]
 Type=simple
